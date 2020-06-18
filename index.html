@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="RU">
 
 <head>
@@ -333,39 +333,7 @@
   <script src="js\owl.carousel.min.js"></script>
   <script src="js\scripts.js"></script>
 
-<!-- Facebook Pixel Code -->
-<script>
- !function(f,b,e,v,n,t,s)
- {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
- n.callMethod.apply(n,arguments):n.queue.push(arguments)};
- if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
- n.queue=[];t=b.createElement(e);t.async=!0;
- t.src=v;s=b.getElementsByTagName(e)[0];
- s.parentNode.insertBefore(t,s)}(window, document,'script',
- 'https://connect.facebook.net/en_US/fbevents.js');
- 
- 
-</script>
-<noscript></noscript>
-<!-- End Facebook Pixel Code --><script>
-(function() {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', '?forward=aHR0cHM6Ly9sZWFkcm9jay5jb20vYXBpL3YyL3ZhbGlkYXRpb24vY29uZmlnP3RyYWNrX3VybD0wJmlwPTg4LjE1NS4xNDAuNDMmdWE9Q3lvdGVrV2ViQ29weS8xLjAgQ3lvdGVrSFRUUC8yLjA=' + '&domain=' + window.location.protocol + '//' + window.location.host, true);
-    xhr.withCredentials = true;
-    xhr.cache = false;
-    xhr.onload = function() {
-        var data = JSON.parse(xhr.responseText);
-        var trackId = '';
-        if (data.hasOwnProperty('macros') && data.macros.hasOwnProperty('track_id') && trackId !== '') {
-            data.macros.track_id = trackId;
-            }
-        if (data.is_enabled) {
-            LeadrockValidator.init(data);
-        }
-    };
-    xhr.send();
-})();
-</script>
+
 </body><!-- /footer -->
 
 </html>
